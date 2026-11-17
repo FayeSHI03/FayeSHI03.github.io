@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://faye-yafeishi.github.io/sitemap.xml
