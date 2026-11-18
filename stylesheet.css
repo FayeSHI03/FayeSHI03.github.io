@@ -147,13 +147,14 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
 
 .paper-media-col {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   padding: 12px;
 }
 
 .paper-thumb {
   width: 219px;
-  height: 165px;
+  height: auto;
+  min-height: 165px;
   overflow: hidden;
 }
 
@@ -168,8 +169,10 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
   position: relative;
   isolation: isolate;
   width: 219px;
-  height: 165px;
+  height: auto;
+  min-height: 165px;
   flex: none;
+  align-self: stretch;
   outline: none;
   touch-action: pan-y;
   user-select: none;
@@ -438,9 +441,9 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
     margin: 0 -8px;
   }
 
-  .paper-media-col { padding: 12px 8px; }
-  .paper-thumb { width: 156px; height: 117px; }
-  .paper-carousel { width: 156px; height: 117px; }
+  .paper-media-col { padding: 10px 8px; }
+  .paper-thumb { width: 156px; height: auto; min-height: 117px; }
+  .paper-carousel { width: 156px; height: auto; min-height: 117px; }
   .paper-content-col { padding: 10px 8px; }
   .paper-desc { text-align: left; }
   .academic-grid { grid-template-columns: 1fr; }
@@ -451,8 +454,8 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
 @media (max-width: 420px) {
   .paper-row { display: block; min-height: 0; padding: 12px 0; }
   .paper-media-col { padding-bottom: 4px; }
-  .paper-thumb { width: 219px; height: 165px; }
-  .paper-carousel { width: 219px; height: 165px; }
+  .paper-thumb { width: 219px; height: 165px; min-height: 165px; }
+  .paper-carousel { width: 219px; height: 165px; min-height: 165px; }
   .paper-content-col { padding-top: 4px; }
   .award-row { grid-template-columns: 72px minmax(0, 1fr); gap: 12px; }
 }
