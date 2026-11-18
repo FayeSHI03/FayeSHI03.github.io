@@ -111,6 +111,7 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
 
 .profile-links {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 14px;
@@ -135,7 +136,7 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
 
 .paper-row {
   display: grid;
-  grid-template-columns: 170px minmax(0, 1fr);
+  grid-template-columns: 243px minmax(0, 1fr);
   align-items: stretch;
   min-height: 192px;
   width: calc(100% + 24px);
@@ -151,8 +152,8 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
 }
 
 .paper-thumb {
-  width: 146px;
-  height: 110px;
+  width: 219px;
+  height: 165px;
   overflow: hidden;
 }
 
@@ -166,8 +167,8 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
 .paper-carousel {
   position: relative;
   isolation: isolate;
-  width: 146px;
-  height: 110px;
+  width: 219px;
+  height: 165px;
   flex: none;
   outline: none;
   touch-action: pan-y;
@@ -428,16 +429,18 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
 
   .name-title { padding-top: 0; font-size: 28px; line-height: 35px; }
 
+  .profile-links { gap: 8px; font-size: 14px; }
+
   .paper-row {
-    grid-template-columns: 124px minmax(0, 1fr);
+    grid-template-columns: 172px minmax(0, 1fr);
     min-height: 150px;
     width: calc(100% + 16px);
     margin: 0 -8px;
   }
 
   .paper-media-col { padding: 12px 8px; }
-  .paper-thumb { width: 104px; height: 78px; }
-  .paper-carousel { width: 104px; height: 78px; }
+  .paper-thumb { width: 156px; height: 117px; }
+  .paper-carousel { width: 156px; height: 117px; }
   .paper-content-col { padding: 10px 8px; }
   .paper-desc { text-align: left; }
   .academic-grid { grid-template-columns: 1fr; }
@@ -448,8 +451,8 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
 @media (max-width: 420px) {
   .paper-row { display: block; min-height: 0; padding: 12px 0; }
   .paper-media-col { padding-bottom: 4px; }
-  .paper-thumb { width: 146px; height: 110px; }
-  .paper-carousel { width: 146px; height: 110px; }
+  .paper-thumb { width: 219px; height: 165px; }
+  .paper-carousel { width: 219px; height: 165px; }
   .paper-content-col { padding-top: 4px; }
   .award-row { grid-template-columns: 72px minmax(0, 1fr); gap: 12px; }
 }
