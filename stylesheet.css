@@ -271,6 +271,12 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
   display: none;
 }
 
+.paper-carousel.is-single .carousel-stack {
+  border: 1px solid #dfe5ea;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.13);
+}
+
 .carousel-dots {
   position: absolute;
   z-index: 3;
