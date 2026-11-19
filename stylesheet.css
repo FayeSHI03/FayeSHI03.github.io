@@ -418,6 +418,46 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
   line-height: 19px;
 }
 
+.referees-section { margin-top: 24px; }
+
+.referees-list {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  margin-top: 5px;
+}
+
+.referee-row {
+  padding: 13px 0;
+  border-bottom: 1px solid #e7e7e7;
+  text-align: left;
+}
+
+.referee-name {
+  margin: 0 0 3px;
+  color: #1772d0;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 19px;
+}
+
+.referee-position,
+.referee-institution,
+.referee-contact {
+  margin: 0;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.referee-position { color: #333; }
+.referee-institution { color: #555; }
+
+.referee-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 10px;
+  margin-top: 4px;
+}
+
 @media (max-width: 600px) {
   .page { padding: 20px 16px 24px; }
 
