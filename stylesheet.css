@@ -420,6 +420,20 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
 
 .service-section { margin-top: 24px; }
 
+.conference-papers-section { margin-top: 24px; }
+
+.conference-papers-list {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  margin-top: 5px;
+}
+
+.conference-paper {
+  padding: 13px 0 14px;
+  border-bottom: 1px solid #e7e7e7;
+  text-align: left;
+}
+
 .service-list {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
